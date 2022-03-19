@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Semana11</title>
+</head>
+<style>
+  .background{
+    background: skyblue;
+  }
+  #foodFormModal{
+    background-color: whitesmoke; 
+    border: solid purple;
+    widht: 300px;
+    height: 400px;
+  }
+  #cafe{
+    background: gray;
+    color: greenyellow;
+    border: solid whitesmoke;
+  }
+  .modal-title{
+    text-align: center;
+    color: purple;
+  }
+   my-4{
+    text-align: center;
+  }
+  #cardapio1{
+    text-align:center;
+    color: purple;
+  }
+</style>
+<body class="background">
+    <h3 id="cardapio1" class="text-center my-4"><strong>CARDÁPIO DO CAFÉ</strong></h3>
+    <main>
+        <section class="my-3">
+            <div class="container">
+                    <button id="cafe" type="button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#foodFormModal">
+                        Adicionar [+]
+                    </button>
+                <div class="modal fade" data-bs-keyboard="false" id="foodFormModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h2 class="modal-title" id="exampleModalLabel">Nova comida</h2>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                               
+                                <form id="foodForm" class="text-center">
+                                    <div class="mb-3">
+                                        <label for="name" class="form-label">Nome</label>
+                                        <input type="text" name="name" id="name" class="form-control">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="description" class="form-label">Descrição</label>
+                                        <input type="text" name="description" id="description" class="form-control">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="image" class="form-label">Endereço da Imagem</label>
+                                        <input type="text" name="image" id="image" class="form-control">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="price" class="form-label">Preço</label>
+                                        <input type="text" name="price" id="price" class="form-control">
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="reset" class="btn btn-light float-start">Limpar</button>
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                                        <button type="submit" class="btn btn-primary" id="adicionarFoodButton">Adicionar</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="itens-cardapio" class="row"></div>
+        </section>
+    </main>
+    <footer></footer>
+
+    <script src="https://replit.com/@AlanRocha4/activity#cardapio.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+
+</html> 
